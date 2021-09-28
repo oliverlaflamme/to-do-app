@@ -13,7 +13,7 @@ button.addEventListener("click", function () {
     paragraph.classList.add("paragraph-styling");
 
     const deleteButton = document.createElement("button")
-    itemlist.appenchild(deleteButton); //this need to be add to this click function at the same time than taskinput but does add  the button
+    itemlist.appenchild(deleteButton); //this need to be add to this click function at the same time than taskinput but does not add  the button
 
 })
 
