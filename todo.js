@@ -9,18 +9,21 @@ const deleteButton = document.getElementById("deletebutton");
 button.addEventListener("click", function () {
     const paragraph = document.createElement("p");
     paragraph.innerText = taskinput.value;
-    itemlist.appendChild(paragraph, deleteButton);
+    itemlist.appendChild(paragraph);
+    paragraph.appendChild(deleteButton);
+
+
+
+
     paragraph.classList.add("paragraph-styling");
 
-    const deleteButton = document.createElement("button")
-    itemlist.appenchild(deleteButton); //this need to be add to this click function at the same time than taskinput but does not add  the button
-
 })
 
+deleteButton.addEventListener("click", (e));
 
 
-deleteButton.addEventListener("click", function () {
 
-    deleteButton = "click", delete  //???????????????????
 
-})
+
+// const deletebutton = document.getElementById("itemlist");
+// deletebutton.appendChild(deleteButton)
