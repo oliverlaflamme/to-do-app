@@ -1,29 +1,82 @@
-
-
 const taskinput = document.getElementById("taskinput");
-const button = document.getElementById("button");
+const submitButtom = document.getElementById("submitButton");
 const itemlist = document.getElementById("itemlist");
-const deleteButton = document.getElementById("deletebutton");
+const deleteAll = document.getElementById("deletealltask")
+
+submitButtom.addEventListener("click", (e) => {
+    e.preventDefault();
+    addTask();
+});
+function addTask() {
+    const newTask = document.createElement("li");
+    const completedButton = document.createElement('button');
+    const deleteButton = document.createElement("button");
+    newTask.innerText = taskinput.value;
+    itemlist.appendChild(newTask);
+
+    completedButton.innerText = "Completed";
+    newTask.appendChild(completedButton);
+    completedButton.addEventListener("click", function () {
+        newTask.style.textDecoration = "line-through";
+    })
+
+    deleteButton.innerText = "Delete";
+    newTask.appendChild(deleteButton);
+    deleteButton.addEventListener("click", () => deleteTask(deleteButton));
+    document.querySelector('.input').reset();
+    deleteAll.addEventListener("click", () => deleteAllTask
+        (deleteAll));
+    newTask.classList.add("paragraph-styling");
+}
+function deleteTask(element) {
+    element.parentElement.remove();
+}
+function deleteAllTask(element) {
+    element.childElement.remove();
+}
 
 
-button.addEventListener("click", function () {
-    const paragraph = document.createElement("p");
-    paragraph.innerText = taskinput.value;
-    itemlist.appendChild(paragraph);
-    paragraph.appendChild(deleteButton);
+
+
+/*
+
+ deleteAll.addEventListener("click", () => {
+    if (newTask == true ) {
+        deleteAllTask
+        (deleteAll));
+        taskRow.remove()
+      } else {
+        alert("Please complete task first.")
+      }
+ }
+
+
+
+if (completedButton == true) {
+    deleteTask()
+
+} else {
+    alert("Please complete task first.")
+}
 
 
 
 
-    paragraph.classList.add("paragraph-styling");
-
-})
-
-deleteButton.addEventListener("click", (e));
 
 
+if (completedButton ('done')) {
+    newTask.remove()
+} else {
+    alert("Please complete task first !")
+}
 
 
 
-// const deletebutton = document.getElementById("itemlist");
-// deletebutton.appendChild(deleteButton)
+
+
+*/
+
+
+
+
+

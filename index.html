@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-do List</title>
     <link rel="stylesheet" href="todo.css">
-
 </head><!-- end of head -->
 
 <body>
@@ -16,46 +15,25 @@
             <header>To-do List</header>
             <label for="task" id="maintext">Please enter your daily, weekly, monthly New Tasks below</label>
         </div><!-- en of headers -->
-
-        <div class="input">
-
+        <form class="input">
             <input type="task" id="taskinput" placeholder="New task" class="form-control">
-            <button id="button">Add</button>
-        </div><!-- end of input -->
+            <input type="submit" id="submitButton">
+    </div><!-- end of input -->
 
-        <div class="itemlist" id="itemlist">
-            <button id="deletebutton">&#10006;</button>
-
-
-        </div>
-
-
-
-
-
-
-
+    <ul class="itemlist" id="itemlist"></ul>
+    </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="alltask" id="deletealltask">
+        <button>Delete all task</button>
+    </div>
 
 
     <script src="todo.js"></script>
 
 
+
 </body>
+
 
 </html>

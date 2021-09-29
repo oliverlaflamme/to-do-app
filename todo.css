@@ -22,16 +22,14 @@
     color: #2c3531;
     border-width: 5px 5px 5px 5px;
     border-color: #2c3531
-   
-
-}
+   }
 body {
     background-color: #116466;
 }
-#button {
+#submitButton {
     width: 86px;
     height: 76px;
-    padding: 20px 80px 0px 30px;
+    padding: 20px 100px 0px 30px;
     background-color: #2c3531;
     border-width: 5px 5px 5px 5px;
     border-color: #ffcb9a;
@@ -41,7 +39,17 @@ body {
 .paragraph-styling {
     text-align: left;
     font-size: 2.5em;
-    margin: 0px 590px 0px 590px;
+    margin: 0px 590px 0px 535px;
     background-color: #2c3531;
     color:#d9b08c
+}
+button {
+margin: 0px 0px 0px 20px;
+padding: 10px;
+background-color: #ffcb9a;
+}
+
+#deletealltask {
+margin: 0px 0px 0px 750px;
+   
 }
